@@ -1,0 +1,116 @@
+body{
+    margin: auto;
+    background-color: rgb(81, 80, 78);
+}
+h1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
+    margin-top: 5%;
+    margin-bottom: 5%;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.boxes{
+    width:60%;
+    margin:auto;
+}
+.box{
+    display:inline-block;
+    width:24%;
+    height:100%;
+    text-align:center;
+    line-height:5em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.one{
+    background: #010D26;
+    color: whitesmoke;
+}
+.two{
+    background: #85A0A6;
+    color: whitesmoke;
+}
+.three{
+    background: #F2EFBB;
+}
+.four{
+    background: #F2DBAE;
+}
+button{
+    font-size:  20px;
+    padding: 10px 30px;
+    margin: 10px;
+    border: 0;
+    cursor: pointer;
+    color: bisque;
+    text-transform: lowercase;
+    border-radius: 10px;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(.86, .01, .15, .99);
+}
+.button-one {
+	background-color: #fff;
+	transform: perspective(1px) translateZ(0);
+	transition: 0.4s cubic-bezier(.86, .01, .15, .99);
+}
+.button-one::before {
+	transform: scaleX(0);
+	opacity: 0;
+	transform-origin: 50% 50%;
+	transition: 0.4s cubic-bezier(.86, .01, .15, .99);
+}
+.button-one:hover {
+	color: #010D26;
+    box-shadow: 0 0 0 10px rgba(250, 250, 250, 0.1)
+}
+.button-two {
+	background: #fff;
+	transform: perspective(1px) translateZ(0);
+	transition: 0.4s cubic-bezier(.86, .01, .15, .99);
+}
+.button-two:before {
+	background: linear-gradient(to right, black, #af6fff, black);
+	transform: scaleX(0);
+	opacity: 0;
+	transform-origin: 50% 50%;
+	transition: 0.4s cubic-bezier(.86, .01, .15, .99);
+}
+.button-two:hover {
+	color: #010D26;
+	box-shadow: 0 0 0 10px rgba(250, 250, 250, 0.1)
+}
+.button-three {
+	transform: perspective(1px) translateZ(0);
+	background: #fff;
+	transition-duration: 0.4s;
+}
+.button-three:before {
+	background: linear-gradient(to bottom, #88daa1, #08aa61);
+	transform: scaleY(0);
+	transform-origin: 0% 0%;
+	transition: 0.4s cubic-bezier(.86, .01, .15, .99);
+}
+.button-three:hover {
+	color: #010D26;
+	box-shadow: 0 0 0 10px rgba(250, 250, 250, 0.1)
+}
+.button-four {
+	background: #fff;
+	transform: perspective(1px) translateZ(0);
+	transition: 0.4s;
+}
+.button-four::before {
+	clip-path: inset(0 100% 0 0);
+	opacity: 1;
+	transition: 0.4s;
+}
+.button-four:hover::before {
+	clip-path: inset(0 0 0 0);
+}
+.button-four:hover {
+	color: #010D26;
+	box-shadow: 0 0 0 10px rgba(250, 250, 250, 0.1)
+}
